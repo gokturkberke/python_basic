@@ -96,9 +96,9 @@ def f():
     print(m)
     
 f()
-
+#fonksiyon disinda tanimlanan deger globalken icinde tanimlanan defer yerel degiskendir
 # x= []
 
 # def elemanekle(m):
 #     x.append(m)
-    
+   
