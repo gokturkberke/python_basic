@@ -44,8 +44,39 @@ print(liste10.pop(0))
 #sort metodu kucukten buyuge veya stringler de alfabetik siraya gore siralar
 liste10.clear()
 #bu da listedeki elemanlari bosaltir
+#----------------------------------------
+#Tuplelar
+tuple1=("berke","korkut",15,18.5)
+#tuplelar listeler gibi degistirilemez
+#tuple1[1]="ahmet" yapamiyoruz error verir
+#ayrica liste de yapabilgimiz su eklemeyi burda yapamayiz
+#tuple1 + "yusuf" error verir
+print(tuple1.index("berke"))
+print(tuple1.count("berke"))
+#------------------------------------
+#Kumeler
+#benzersiz ve degistirilebilir ogeler icin kullanilir
+kume = set(['Yusuf',"Ahmet","ayse"])
+print(kume)
+#bir yusuf daha eklesek yani tek yusuf gozukur
+isim = "berke korkut"
+kume = set(isim)
+print(kume)
+#ayni sekilde copy kodumuz calisir
+kume.add("Ayse") #kumeye eleman ekleme
+print(kume)
 
+k1 = set([1,2,3,4,5,6])
+k2 = set([4,5,6,7,8,9])
+fark=k1.difference(k2)
+print(fark)
 
+#isim = set("Yusuf","ahmet","mehmet"])
+#isim.discard("Yusuf") dersek yusufu cikaririz ayni sekilde remove da ayni islevi gorur
 
+kesisim=k1.intersection(k2)
+print(kesisim)
+#k1.isdisjoint(k2) ifadesi ortak ifaddeler varsa false yoksa true cevirir
 
-
+birlestirme = k1.union(k2)
+#symmetric_difference da ortak olmayan seyleri farkliliklari yazdirir
